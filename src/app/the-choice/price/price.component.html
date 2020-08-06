@@ -1,0 +1,123 @@
+<div class="container">
+    <div class="row">
+        <div style="background: #fff; height: auto; padding: 20px 20px 20px 20px">
+            <h6>FILL IN YOUR DETAILS BELOW FOR A PRICE QUOTE.</h6>
+            <div class="row">
+                <div class="three columns">
+                    <input name="fname" id="fname" type="text" placeholder="Name*" maxlength="75">
+                </div>
+                <div class="columns">
+                    <label>&nbsp;&nbsp;</label>
+                </div>
+                <div class="three columns end">
+                    <input name="mobile" type="text" id="mobile" placeholder="Mobile Number*" maxlength="10">
+                </div>
+                <div class="columns">
+                    <label>&nbsp;&nbsp;</label>
+                </div>
+                <div class="three columns">
+                    <input name="email" id="email" type="text" placeholder="Email Id" maxlength="100">
+                </div>
+                <div class="columns">
+                    <label>&nbsp;&nbsp;</label>
+                </div>
+                <div class="three columns end">
+                    <input name="city" id="city" type="text" placeholder="City*" maxlength="100">
+                </div>
+
+            </div>
+            <p class="push10" style="font-size: 11px; font-family: lato_regular;">
+                Disclaimer: "I agree that by clicking on 'Submit', I am explicitly soliciting a call from Piaggio or its
+                associates,
+                <br>
+                on my mobile number to assist me in purchasing a Piaggio Vehicle".
+            </p>
+            <div class="row" id="max"
+                style="color: #fff; background-color: #000; font-size: 12px; width: auto; height: auto; padding-left: 5px; padding-top: 5px; padding-bottom: 5px; display: none;">
+                Thank you. Our executive will get in touch with you soon.</div>
+            <div class="row" style="padding-top: 10px;">
+                <div class="three columns">
+                    <a href="javascript:void(0);" onclick="javascript:fnvalidate();">
+                        <img src="./assets/images/submit_btn.jpg" id="Btnsubmit" alt="Submit"
+                            style="border: 0px;"></a><img src="./VESPA - INDIA_files/loader.gif" id="submitloder"
+                        style="display: none;" alt="Loader">
+                </div>
+                <div class="columns">
+                    <label>&nbsp;&nbsp;</label>
+                </div>
+                <div class="three columns end" style="line-height: 32px; font-size: 12px; font-family: lato_regular;">
+                    Note: *All fields are mandatory.
+                </div>
+            </div>
+            <p class="push10">&nbsp;</p>
+            <p class="separator push10" style="width: 52%;"></p>
+            <p class="push10">&nbsp;</p>
+            <h6>CHECK OUT THE PRICES* IN YOUR CITY:</h6>
+            <div class="row">
+                <div class="three columns end">
+                    <select name="ddmodel" id="ddmodel" onchange="fnmodel();" disabled="disabled">
+                        <option value="0">-- Please select a variant --</option>
+
+                        <option value="Vespa">LX 125</option>
+
+
+                        <option value="vespa eleganta">ZX 125 CBS</option>
+                        <option value="vespa vxl150">VXL 150 ABS</option>
+                        <option value="vespa sxl150">SXL 150 ABS</option>
+
+                        <option value="vespa sxl150red">Urban Club &amp; Notte 125</option>
+                        <option value="vespa vxl125">VXL 125 CBS</option>
+                        <option value="vespa sxl125">SXL 125 CBS</option>
+
+                    </select>
+                </div>
+            </div>
+            <div class="row">&nbsp;</div>
+            <div class="row">
+                <div class="three columns">
+                    <select name="ddlstate" id="ddlstate" disabled="disabled" onchange="Showcity();">
+                        <option value="0">-- Please select state --</option>
+                    </select>
+                    <img src="./VESPA - INDIA_files/loader.gif" id="stateloader" style="display: none;" alt="Loader">
+                </div>
+                <div class="columns">
+                    <label>&nbsp;&nbsp;</label>
+                </div>
+                <div class="three columns end">
+                    <select name="ddlcity" id="ddlcity" onchange="Showprice();" disabled="disabled">
+                        <option value="0">-- Please select city --</option>
+                    </select><img src="./VESPA - INDIA_files/loader.gif" id="cityloader" style="display: none;"
+                        alt="Loader">
+                </div>
+            </div>
+            <div class="row">
+                <div class="price-tag" id="dvprice" style="display: none;"></div>
+
+            </div>
+
+
+            <div class="row">&nbsp;</div>
+            <div class="row" id="price_tnc">
+                <h6>*Terms &amp; Conditions</h6>
+                <div class="cl">
+                    <ul class="no-bullet">
+
+                        <li style="font-size: 11px;">All prices are Ex-showroom, exclusive of Octroi.</li>
+                        <li style="font-size: 11px;">Price ruling at the time of delivery would be applicable.</li>
+                        <li style="font-size: 11px;">Prices are subject to change without notice.</li>
+                        <li style="font-size: 11px;">Please reconfirm prices with the local dealer as there may be some
+                            lag
+                            during updations when prices get revised.</li>
+                        <li style="font-size: 11px;">Vespa, Vespa SXL Matt Red and Non Connectivity 150cc vehicles are
+                            available till the stock lasts.</li>
+                        <li style="font-size: 11px;">Prices may Vary as per selected color and variant. For detailed
+                            enquiry
+                            visit Nearby Dealership</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
