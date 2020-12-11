@@ -6,7 +6,7 @@ import { CanLoad } from '@angular/router';
 })
 export class AuthenticationService implements CanLoad{
   canLoad() {
-    return true;
+    return false;
   }
 
   constructor() { }
